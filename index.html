@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input id="showDisplay" type="text" name="display" />
+          </div>
+          <div>
+            <input type="button" value="AC" onclick="allClearDisplay()"/>
+            <input
+              type="button"
+              value="DE"
+              onclick="deleteLast()"
+            />
+            <input type="button" value="." onclick="addToDisplay(this.value)" />
+            <input type="button" value="/" onclick="addToDisplay(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="addToDisplay(this.value)" />
+            <input type="button" value="8" onclick="addToDisplay(this.value)"/>
+            <input type="button" value="9" onclick="addToDisplay(this.value)" />
+            <input type="button" value="*" onclick="addToDisplay(this.value)"/>
+          </div>
+          <div>
+            <input type="button" value="4" onclick="addToDisplay(this.value)" />
+            <input type="button" value="5" onclick="addToDisplay(this.value)" />
+            <input type="button" value="6" onclick="addToDisplay(this.value)" />
+            <input type="button" value="-" onclick="addToDisplay(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="addToDisplay(this.value)" />
+            <input type="button" value="2" onclick="addToDisplay(this.value)" />
+            <input type="button" value="3" onclick="addToDisplay(this.value)" />
+            <input type="button" value="+" onclick="addToDisplay(this.value)" />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="00"
+              onclick="addToDisplay(this.value)"
+            />
+            <input type="button" value="0" onclick="addToDisplay(this.value)" />
+            <input
+              class="equal"
+              type="button"
+              value="="
+              onclick="calculate()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
